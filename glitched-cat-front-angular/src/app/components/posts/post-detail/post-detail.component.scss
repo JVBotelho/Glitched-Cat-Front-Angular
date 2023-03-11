@@ -1,0 +1,35 @@
+.post-detail {
+  padding: $unit-4;
+  background-color: $gray-lighter;
+  border-radius: $border-radius;
+
+  .post-detail-content {
+    background-color: $white;
+    padding: $unit-4;
+    border: $border;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    h2 {
+      margin-top: 0;
+    }
+
+    .post-detail-metadata {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: $unit-4;
+
+      .post-detail-author {
+        font-weight: bold;
+      }
+
+      .post-detail-dates {
+        display: flex;
+
+        span {
+          margin-left: $unit-2;
+        }
+      }
+    }
+  }
+}

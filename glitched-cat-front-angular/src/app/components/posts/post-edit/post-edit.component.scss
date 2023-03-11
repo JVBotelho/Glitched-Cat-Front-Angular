@@ -1,0 +1,41 @@
+@import "../shared/styles.scss";
+
+.post-edit {
+  padding: $unit-4;
+
+  h1 {
+    margin-top: 0;
+  }
+
+  form {
+    margin-top: $unit-4;
+    max-width: 500px;
+
+    .form-group {
+      margin-bottom: $unit-4;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: $unit-2;
+    }
+
+    input[type="text"], textarea {
+      width: 100%;
+      padding: $unit-2;
+      border-radius: $border-radius;
+      border: $border;
+      background-color: $white;
+      box-shadow: $box-shadow;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .btn-primary {
+      margin-right: $unit-2;
+    }
+  }
+}

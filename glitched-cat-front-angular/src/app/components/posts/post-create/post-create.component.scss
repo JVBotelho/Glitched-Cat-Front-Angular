@@ -1,0 +1,15 @@
+@import "../../../shared/styles.scss";
+
+.post-create-form {
+  padding: $unit-4;
+  background-color: $gray-lighter;
+  border-radius: $border-radius;
+  
+  .form-group {
+    margin-bottom: $unit-2;
+  }
+
+  button[type="submit"] {
+    margin-top: $unit-2;
+  }
+}
