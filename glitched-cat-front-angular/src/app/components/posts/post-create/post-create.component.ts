@@ -17,20 +17,22 @@ export class PostCreateComponent {
   constructor(private postService: PostService, private router: Router) { }
 
   onSubmit() {
+    debugger;
     if (this.postForm.valid) {
       this.onSavePost();
     }
   }
 
   onSavePost() {
-    const post: Post = {
-      id: '',
-      title: this.title,
-      content: this.content,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    };
-    this.postService.createPost(post);
-    this.router.navigate(['/']);
+  const post: Post = {
+    id: '',
+    title: this.title,
+    content: this.content,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  };
+  this.postService.createPost(post).subscribe(() => {
+    this.router.navigate(['/posts']);
+  });
   }
 }

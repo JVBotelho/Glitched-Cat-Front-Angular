@@ -9,7 +9,7 @@ import { Post } from '../posts/post.model';
   providedIn: 'root'
 })
 export class PostService {
-  private readonly API_URL = 'https://your-api-url.com/api/posts';
+  private readonly API_URL = 'https://localhost:5001/api/posts';
 
   constructor(private http: HttpClient) { }
 

@@ -17,6 +17,9 @@ export class PostListComponent implements OnInit {
   }
 
   onDelete(postId: string) {
-    this.postService.deletePost(postId);
+    this.postService.deletePost(postId).subscribe(() => {
+      // update the list of posts after successful delete
+      this.posts = this.posts.filter(post => post.id !== postId);
+    });
   }
 }

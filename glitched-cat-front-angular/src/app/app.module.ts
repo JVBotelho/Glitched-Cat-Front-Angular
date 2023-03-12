@@ -39,7 +39,7 @@ import { SharedModule } from './shared/shared.module';
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
-    SharedModule
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
